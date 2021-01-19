@@ -1,31 +1,14 @@
 
 //1
-const evowels = (str)=>{
-    
-    let newv = str.split("");
-    let counter = 0;
-    for (let i=0; i< newv.length; i++){
-        newv[i] += counter++;
-    }
-    return counter;
-};
-console.log(evowels("a,o,u,i,e"));
+
+
 //2
 const set = (arr)=>{
     let result = "";
+    let current = [];
     for (let i=0; i< arr.length; i++){
-        if (i == arr[i]){result.splice.repeat(arr[i]);}
+        if (!current == arr[i]){result.push(arr[i]);}
     }
     return result;
 };
-
-console.log(set[1,6,7,5,7,1]);
-//3
-const dictionary = (str, arry)=>{
-let result = "";
-    for (let i=0; i< str.length; i++)
-    for (let i=0; i< arry.length; i++) 
-    {
-        if (i == arry[i]){result }
-    }
-}
+console.log(set[1,6,7,8,7,1]);
