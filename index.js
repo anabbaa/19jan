@@ -1,5 +1,17 @@
 
 //1
+const evowels = (str)=>{
+    let result = "";
+    let vowels = ["a, e, i, o, u"];
+    
+    let newv = vowels.split("");
+    let counter = 0;
+    for (let i=0; i< newv.length; i++)
+    for (j=0; j< str.length; j++){
+    if (newv[i] == str[j]){counter++}}
+    return counter;
+};
+console.log(evowels("tis is a string"));
 
 
 //2
